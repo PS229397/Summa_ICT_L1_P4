@@ -242,19 +242,26 @@
     ::-webkit-scrollbar{
         display: none;
     }
+
+    #rap{
+        margin-top: 0%;
+    }
     .pagecontent {
-        height: 100%;
         width: 67%;
         background-color: white;
         opacity: 20%;
         margin: auto;
     }
-    .innercontent h1 {
+    .innercontent h2 {
         background-color: #fff;
         height: 80%;
         width: 60%;
+        margin: auto;
     }
     
+    footer{
+        background-color: #222;
+    }
     .footerBackground{
         width: 100%;
         background-color: #222;
