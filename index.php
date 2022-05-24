@@ -16,43 +16,67 @@
         <!-- Menu -->
         <header id="nav-wrapper">
             <nav id="nav">
-            <div class="nav left">
-                <span class="gradient skew"><h1 class="logo un-skew"><a href="#home">The Music Box</a></h1></span>
-                <button id="menu" class="btn-nav"><span class="fas fa-bars"></span></button>
-            </div>
-            <div class="nav right">
-                <a href="#rap" class="nav-link"><span class="nav-link-span"><span class="u-nav">Rap</span></span></a>
-                <a href="#rock" class="nav-link active"><span class="nav-link-span"><span class="u-nav">Rock</span></span></a>
-                <a href="#dubstep" class="nav-link"><span class="nav-link-span"><span class="u-nav">Dubstep</span></span></a>
-                <a href="#dnb" class="nav-link"><span class="nav-link-span"><span class="u-nav">Drum 'n' Bass</span></span></a>
-            </div>
+                <div class="nav left">
+                    <span class="gradient skew"><h1 class="logo un-skew"><a href="#rap">The Music Box</a></h1></span>
+                    <button id="menu" class="btn-nav"><span class="fas fa-bars"></span></button>
+                </div>
+                <div class="nav right">
+                    <a href="#rap" class="nav-link"><span class="nav-link-span"><span class="u-nav">Rap</span></span></a>
+                    <a href="#rock" class="nav-link active"><span class="nav-link-span"><span class="u-nav">Rock</span></span></a>
+                    <a href="#dubstep" class="nav-link"><span class="nav-link-span"><span class="u-nav">Dubstep</span></span></a>
+                    <a href="#dnb" class="nav-link"><span class="nav-link-span"><span class="u-nav">Drum 'n' Bass</span></span></a>
+                </div>
             </nav>
         </header>
         <main>
             <section id="rap">
-                <div class="pagecontent">
-                    <br><br><br>
-                    hello world
+                <div class="pagebackground">
+                    <div class="pagecontent">
+                        <br><br><br>
+                        <div class="pageheader">
+                            <h1>Rap</h1>
+                        </div>  
+                        <br>
+                        lololol
+                    </div>
                 </div>
             </section>
             <section id="rock">
-                <div class="pagecontent">
-                    <div class="innercontent">
-                        
+                <div class="pagebackground">
+                    <div class="pagecontent">
+                        <br><br><br>
+                        <div class="pageheader">
+                            <h1>Rock</h1>
+                        </div>
+                        <div class="table">
+
+                        </div>
                     </div>
                 </div>
             </section>
             <section id="dubstep">
-                <div class="pagecontent">
-                    <div class="innercontent">
-                       
+                <div class="pagebackground">
+                    <div class="pagecontent">
+                        <br><br><br>
+                        <div class="pageheader">
+                            <h1>Dubstep</h1>
+                        </div>
+                        <div class="table">
+                            
+                        </div>
                     </div>
                 </div>
             </section>
             <section id="dnb">
-                <div class="pagecontent">
-                    <div class="innercontent">
-
+                <div class="pagebackground">
+                    <div class="pagecontent">
+                        <br><br><br>
+                        <div class="pageheader">
+                            <h1>Drum 'n' Bass</h1>
+                        </div>
+                        <div class="table">
+                            
+                        </div>
                     </div>
                 </div>
             </section>

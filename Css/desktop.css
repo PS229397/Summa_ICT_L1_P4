@@ -2,31 +2,6 @@
 /* desktop */
 /* ============================================================ */
 @media only screen  and (min-width: 980px){
-    /* grid layout */
-    .item1 { grid-area: header; }
-    .item2 { grid-area: main; }
-    .item3 { grid-area: right; }
-    .item4 { grid-area: left; }
-    .item5 { grid-area: footer; }
-    
-
-    .grid-container {
-    display: grid;
-    grid-template-areas:
-        'header header header header header'
-        'left main main main right'
-        'left main main main right'
-        'left main main main right'
-        'footer footer footer footer footer';
-    
-    }
-
-    .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-    }
     /* ======================================================== */
     /* Navbar */
     /*-------------Reset-------------*/
@@ -101,7 +76,7 @@
         display: flex;
         flex-direction: column;
         font-family: "Saira Semi Condensed", sans-serif;
-        height: 4em;
+        height: 5em;
         overflow: hidden;
     }
     #nav.nav-visible {
@@ -111,8 +86,8 @@
     
     .nav {
         display: flex;
-        height: 4em;
-        line-height: 4em;
+        height: 5em;
+        line-height: 5em;
         flex-grow: 1;
     }
     
@@ -139,9 +114,11 @@
     
     h1.logo {
         font-weight: 300;
-        font-size: 1.75em;
-        line-height: 0.75em;
+        font-size: 2.02em;
+        line-height: 0.8em;
         color: rgb(116, 116, 116);
+        height: 4em;
+
     }
     
     h1.logo a, a:active, a:hover, a:visited {
@@ -246,24 +223,24 @@
     #rap{
         margin-top: 0%;
     }
-    .pagecontent {
-        width: 67%;
-        background-color: white;
-        opacity: 20%;
+    .pagebackground {
+        width: 70.8%;
+        background-color: rgb(97, 97, 97);
         margin: auto;
+        top: 15%;
+        height: 100%;
     }
-    .innercontent h2 {
-        background-color: #fff;
-        height: 80%;
-        width: 60%;
+    .pagecontent{
+        width: 90%;
         margin: auto;
+        top: 15%;
     }
-    
-    footer{
-        background-color: #222;
+    .pageheader{
+
     }
-    .footerBackground{
-        width: 100%;
-        background-color: #222;
+    .pageheader h1 {
+        font-size: 60px;
+        color: #fff;
+        opacity: 100%;
     }
 }
