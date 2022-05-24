@@ -33,11 +33,16 @@
                 <div class="pagebackground">
                     <div class="pagecontent">
                         <br><br><br>
-                        <div class="pageheader">
-                            <h1>Rap</h1>
-                        </div>  
-                        <br>
-                        lololol
+                        <div class="pageheaderout">
+                            <div class="pageheadermid">
+                                <div class="pageheaderin">
+                                    <h1>Rap</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="table">
+                            
+                        </table>
                     </div>
                 </div>
             </section>
@@ -45,12 +50,16 @@
                 <div class="pagebackground">
                     <div class="pagecontent">
                         <br><br><br>
-                        <div class="pageheader">
-                            <h1>Rock</h1>
+                        <div class="pageheaderout">
+                            <div class="pageheadermid">
+                                <div class="pageheaderin">
+                                    <h1>Rock</h1>
+                                </div>
+                            </div>
                         </div>
-                        <div class="table">
-
-                        </div>
+                        <table class="table">
+                            
+                        </table>
                     </div>
                 </div>
             </section>
@@ -58,12 +67,16 @@
                 <div class="pagebackground">
                     <div class="pagecontent">
                         <br><br><br>
-                        <div class="pageheader">
-                            <h1>Dubstep</h1>
+                        <div class="pageheaderout">
+                            <div class="pageheadermid">
+                                <div class="pageheaderin">
+                                    <h1>Dubstep</h1>
+                                </div>
+                            </div>
                         </div>
-                        <div class="table">
+                        <table class="table">
                             
-                        </div>
+                        </table>
                     </div>
                 </div>
             </section>
@@ -71,12 +84,16 @@
                 <div class="pagebackground">
                     <div class="pagecontent">
                         <br><br><br>
-                        <div class="pageheader">
-                            <h1>Drum 'n' Bass</h1>
+                        <div class="pageheaderout">
+                            <div class="pageheadermid">
+                                <div class="pageheaderin">
+                                    <h1>Drum 'n' Bass</h1>
+                                </div>
+                            </div>
                         </div>
-                        <div class="table">
+                        <table class="table">
                             
-                        </div>
+                        </table>
                     </div>
                 </div>
             </section>
