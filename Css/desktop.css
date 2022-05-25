@@ -264,4 +264,7 @@
         color:rgb(100, 200, 0);
         transform: skew(20deg);
     }
+    td.border_bottom  {
+        border-bottom: 1px solid black;
+    }
 }
