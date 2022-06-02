@@ -48,7 +48,8 @@
                                 <th class="trackid">Track-id</th>
                                 <th class="song">Song</th>
                                 <th class="artist">Artist</th>
-                                <th class="playlist"><a href="#">Playlist</a></th>
+                                <th class="playlist">Playlist</th>
+                                <th class="playlist"><a href="<?= $db->GetGenrePlaylist('Rap')?>" target="_blank">HERE</th>
                             </tr>
                             <?php 
                                 $dataArray = $db->RapTracks();
@@ -88,8 +89,8 @@
                                 <th class="trackid">Track-id</th>
                                 <th class="song">Song</th>
                                 <th class="artist">Artist</th>
-                                <th class="playlist"></th>
-                                <th class="playlist"></th>
+                                <th class="playlist">Playlist</th>
+                                <th class="playlist"><a href="<?= $db->GetGenrePlaylist('Rock')?>" target="_blank">HERE</th>
                             </tr>
                             <?php 
                                 $dataArray = $db->RockTracks();
@@ -129,8 +130,8 @@
                                 <th class="trackid">Track-id</th>
                                 <th class="song">Song</th>
                                 <th class="artist">Artist</th>
-                                <th class="playlist"></th>
-                                <th class="playlist"></th>
+                                <th class="playlist">Playlist</th>
+                                <th class="playlist"><a href="<?= $db->GetGenrePlaylist('Dubstep')?>" target="_blank">HERE</th>
                             </tr>
                             <?php 
                                 $dataArray = $db->DubstepTracks();
@@ -170,8 +171,8 @@
                                 <th class="trackid">Track-id</th>
                                 <th class="song">Song</th>
                                 <th class="artist">Artist</th>
-                                <th class="playlist"></th>
-                                <th class="playlist"></th>
+                                <th class="playlist">Playlist</th>
+                                <th class="playlist"><a href="<?= $db->GetGenrePlaylist("Drum 'n' Bass")?>" target="_blank">HERE</th>
                             </tr>
                             <?php 
                                 $dataArray = $db->DubstepTracks();

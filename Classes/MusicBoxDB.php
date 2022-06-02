@@ -6,6 +6,24 @@
             const PASSWD = "";
             
             //Read -> returns the rows. Returns false when error
+            function GetGenrePlaylist(string $genre){
+                try{
+                    $pdo = new PDO(self::DSN, self::USER, self::PASSWD);
+
+                    $statement = $pdo->prepare("SELECT Playlist FROM `genres` WHERE `Genre` = :genre;");
+
+                    $statement->bindParam(':genre', $genre); 
+
+                    $statement->execute();
+
+                    return $statement->fetchColumn(0);
+                    
+                }
+                catch(PDOException $e){
+                    var_dump($e);
+                    die();
+                }
+            }
             function RapTracks(){
                 try{
                     $pdo = new PDO(self::DSN, self::USER, self::PASSWD);
