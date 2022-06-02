@@ -1,10 +1,13 @@
+<?php
+    include_once "./classes/MusicBoxDB.php";
+    $db = new MusicBoxDB();
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <script src="./Javascript/script.js"></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+        <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+        <script type="text/javascript" src="./Javascript/script.js"></script>
         <link rel="stylesheet" href="./Css/desktop.css">
-        <link rel="stylesheet" href="./Css/mobile.css">
         <link rel="icon" type="" href="">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,8 +24,8 @@
                     <button id="menu" class="btn-nav"><span class="fas fa-bars"></span></button>
                 </div>
                 <div class="nav right">
-                    <a href="#rap" class="nav-link"><span class="nav-link-span"><span class="u-nav">Rap</span></span></a>
-                    <a href="#rock" class="nav-link active"><span class="nav-link-span"><span class="u-nav">Rock</span></span></a>
+                    <a href="#rap" class="nav-link active"><span class="nav-link-span"><span class="u-nav">Rap</span></span></a>
+                    <a href="#rock" class="nav-link"><span class="nav-link-span"><span class="u-nav">Rock</span></span></a>
                     <a href="#dubstep" class="nav-link"><span class="nav-link-span"><span class="u-nav">Dubstep</span></span></a>
                     <a href="#dnb" class="nav-link"><span class="nav-link-span"><span class="u-nav">Drum 'n' Bass</span></span></a>
                 </div>
@@ -41,7 +44,30 @@
                             </div>
                         </div>
                         <table class="table">
-                            
+                            <tr>
+                                <th class="trackid">Track-id</th>
+                                <th class="song">Song</th>
+                                <th class="artist">Artist</th>
+                                <th class="playlist"><a href="#">Playlist</a></th>
+                            </tr>
+                            <?php 
+                                $dataArray = $db->RapTracks();
+                                for($rowcounter = 0; $rowcounter < count($dataArray); $rowcounter++){
+                            ?>
+                            <tr>
+                                <td class="trackid"><?= $dataArray[$rowcounter]["Track_id"] ?></td>
+                                <td class="song"><?= $dataArray[$rowcounter]["Song"] ?></td>
+                                <td class="artist"><?= $dataArray[$rowcounter]["Artist"] ?></td>
+                                <td class="yt">
+                                    <button><a href="<?= $dataArray[$rowcounter]["YT_Link"] ?>" target="_blank">Youtube</button>
+                                </td>
+                                <td class="yt">
+                                    <button><a href="<?= $dataArray[$rowcounter]["SP_Link"] ?>" target="_blank">Spotify</button>
+                                </td>
+                            </tr>
+                            <?php 
+                            }
+                            ?>
                         </table>
                     </div>
                 </div>
@@ -58,7 +84,31 @@
                             </div>
                         </div>
                         <table class="table">
-                            
+                            <tr>
+                                <th class="trackid">Track-id</th>
+                                <th class="song">Song</th>
+                                <th class="artist">Artist</th>
+                                <th class="playlist"></th>
+                                <th class="playlist"></th>
+                            </tr>
+                            <?php 
+                                $dataArray = $db->RockTracks();
+                                for($rowcounter = 0; $rowcounter < count($dataArray); $rowcounter++){
+                            ?>
+                            <tr>
+                                <td class="trackid"><?= $dataArray[$rowcounter]["Track_id"] ?></td>
+                                <td class="song"><?= $dataArray[$rowcounter]["Song"] ?></td>
+                                <td class="artist"><?= $dataArray[$rowcounter]["Artist"] ?></td>
+                                <td class="yt">
+                                    <button><a href="<?= $dataArray[$rowcounter]["YT_Link"] ?>" target="_blank">Youtube</button>
+                                </td>
+                                <td class="yt">
+                                    <button><a href="<?= $dataArray[$rowcounter]["SP_Link"] ?>" target="_blank">Spotify</button>
+                                </td>
+                            </tr>
+                            <?php 
+                            }
+                            ?>
                         </table>
                     </div>
                 </div>
@@ -75,7 +125,31 @@
                             </div>
                         </div>
                         <table class="table">
-                            
+                            <tr>
+                                <th class="trackid">Track-id</th>
+                                <th class="song">Song</th>
+                                <th class="artist">Artist</th>
+                                <th class="playlist"></th>
+                                <th class="playlist"></th>
+                            </tr>
+                            <?php 
+                                $dataArray = $db->DubstepTracks();
+                                for($rowcounter = 0; $rowcounter < count($dataArray); $rowcounter++){
+                            ?>
+                            <tr>
+                                <td class="trackid"><?= $dataArray[$rowcounter]["Track_id"] ?></td>
+                                <td class="song"><?= $dataArray[$rowcounter]["Song"] ?></td>
+                                <td class="artist"><?= $dataArray[$rowcounter]["Artist"] ?></td>
+                                <td class="yt">
+                                    <button><a href="<?= $dataArray[$rowcounter]["YT_Link"] ?>" target="_blank">Youtube</button>
+                                </td>
+                                <td class="yt">
+                                    <button><a href="<?= $dataArray[$rowcounter]["SP_Link"] ?>" target="_blank">Spotify</button>
+                                </td>
+                            </tr>
+                            <?php 
+                            }
+                            ?>  
                         </table>
                     </div>
                 </div>
@@ -92,7 +166,31 @@
                             </div>
                         </div>
                         <table class="table">
-                            
+                            <tr>
+                                <th class="trackid">Track-id</th>
+                                <th class="song">Song</th>
+                                <th class="artist">Artist</th>
+                                <th class="playlist"></th>
+                                <th class="playlist"></th>
+                            </tr>
+                            <?php 
+                                $dataArray = $db->DubstepTracks();
+                                for($rowcounter = 0; $rowcounter < count($dataArray); $rowcounter++){
+                            ?>
+                            <tr>
+                                <td class="trackid"><?= $dataArray[$rowcounter]["Track_id"] ?></td>
+                                <td class="song"><?= $dataArray[$rowcounter]["Song"] ?></td>
+                                <td class="artist"><?= $dataArray[$rowcounter]["Artist"] ?></td>
+                                <td class="yt">
+                                    <button><a href="<?= $dataArray[$rowcounter]["YT_Link"] ?>" target="_blank">Youtube</button>
+                                </td>
+                                <td class="yt">
+                                    <button><a href="<?= $dataArray[$rowcounter]["SP_Link"] ?>" target="_blank">Spotify</button>
+                                </td>
+                            </tr>
+                            <?php 
+                            }
+                            ?>  
                         </table>
                     </div>
                 </div>

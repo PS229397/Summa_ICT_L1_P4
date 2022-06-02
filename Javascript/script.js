@@ -25,12 +25,13 @@
             }
         });
         }
+        
     };
     
     $(document).ready(function() {
         
         util.scrollMenuIds = $("a.nav-link[href]");
-        $("#menu").click(util.mobileMenu);
+        $("#nav").click(util.mobileMenu);
         $(window).resize(util.windowResize);
         $(document).scroll(util.scrollEvent);
         

@@ -267,4 +267,42 @@
     td.border_bottom  {
         border-bottom: 1px solid black;
     }
+    table.table{
+        background-color: rgb(100, 200, 0);
+    }
+    .table, td {
+        margin: auto;
+        border: 1px solid black;
+        width: 93%;
+        margin-top: 1%;
+        background-color: #444;
+        color: #fff;
+        font-size: 18px;
+    }
+    .table, th {
+        border: 1px solid black;
+        background-color: #444;
+        text-align: center;
+    }
+    .trackid{
+        width: 7%;
+    }
+    .song{
+        width: 38%;
+    }
+    .artist{
+        width: 30%;
+    }
+    .yt{
+        width: 5%;
+    }
+    .sp{
+        width: 5%;
+    }
+    .playlist{
+        width: max-content;
+    }
+    .linkbtn{
+        background-color: rgb(100, 200, 0);
+    }
 }
