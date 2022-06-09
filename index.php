@@ -175,7 +175,7 @@
                                 <th class="playlist"><a href="<?= $db->GetGenrePlaylist("Drum 'n' Bass")?>" target="_blank">HERE</th>
                             </tr>
                             <?php 
-                                $dataArray = $db->DubstepTracks();
+                                $dataArray = $db->DnbTracks();
                                 for($rowcounter = 0; $rowcounter < count($dataArray); $rowcounter++){
                             ?>
                             <tr>

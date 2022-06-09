@@ -28,7 +28,7 @@
                 try{
                     $pdo = new PDO(self::DSN, self::USER, self::PASSWD);
 
-                    $statement = $pdo->prepare("SELECT * FROM `tracks` WHERE `FK_Genre_id` = '1';");
+                    $statement = $pdo->prepare("SELECT * FROM `tracks` WHERE `Genre` = 'Rap';");
 
                     $statement->execute();
 
@@ -43,7 +43,7 @@
                 try{
                     $pdo = new PDO(self::DSN, self::USER, self::PASSWD);
 
-                    $statement = $pdo->prepare("SELECT * FROM `tracks` WHERE `FK_Genre_id` = '2';");
+                    $statement = $pdo->prepare("SELECT * FROM `tracks` WHERE `Genre` = 'Rock';");
 
                     $statement->execute();
 
@@ -58,7 +58,7 @@
                 try{
                     $pdo = new PDO(self::DSN, self::USER, self::PASSWD);
 
-                    $statement = $pdo->prepare("SELECT * FROM `tracks` WHERE `FK_Genre_id` = '3';");
+                    $statement = $pdo->prepare("SELECT * FROM `tracks` WHERE `Genre` = 'Dubstep';");
 
                     $statement->execute();
 
@@ -73,7 +73,7 @@
                 try{
                     $pdo = new PDO(self::DSN, self::USER, self::PASSWD);
 
-                    $statement = $pdo->prepare("SELECT * FROM `tracks` WHERE `FK_Genre_id` = '4';");
+                    $statement = $pdo->prepare("SELECT * FROM `tracks` WHERE `Genre` = \"Drum 'n' Bass\";");
 
                     $statement->execute();
 
@@ -81,6 +81,7 @@
                     return $rows;
                 }
                 catch(PDOException $e) {
+                    var_dump($e);
                     return false;
                 }
             }
