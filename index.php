@@ -9,11 +9,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width= 1080px, initial-scale=1.0">
         <meta name="description" content="">
+        <title>Title</title>
         <?php
             include('pageheaders.php');
             include('pages.php');
         ?>
-        <title>Titel</title>
     </head>
     <body>
         <!-- Menu -->
