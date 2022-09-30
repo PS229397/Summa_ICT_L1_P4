@@ -11,7 +11,6 @@
         <meta name="description" content="">
         <title>Title</title>
         <?php
-            include('pageheaders.php');
             include('pages.php');
         ?>
     </head>
@@ -30,7 +29,6 @@
                         <br><br><br>
                         <?php
                             header_1();
-                            
                             page_1();
                         ?>    
                     </div>
@@ -45,7 +43,6 @@
                         <br><br><br>
                         <?php
                             header_2();
-
                             page_2();
                         ?>
                     </div>
@@ -60,7 +57,6 @@
                         <br><br><br>
                         <?php
                             header_3();
-
                             page_3();
                         ?>
                     </div>
@@ -75,7 +71,6 @@
                         <br><br><br>
                         <?php
                             header_4();
-
                             page_4();
                         ?>
                     </div>
@@ -90,7 +85,6 @@
                         <br><br><br>
                         <?php
                             header_5();
-
                             page_5();
                         ?>
                     </div>
