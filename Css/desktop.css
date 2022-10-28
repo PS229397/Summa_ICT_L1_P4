@@ -2,6 +2,14 @@
 /* desktop */
 /* ============================================================ */
 @media only screen  and (min-width: 980px){
+    /* Colorpicker */
+    :root{
+        --background-color: #333;
+        --pagebackground-color: #444;
+        --primary-color:lawngreen;
+        --secondary-color:#;
+        --tertiary-color:#;
+    }
     /* ======================================================== */
     /* Navbar */
     /*-------------Reset-------------*/
@@ -19,7 +27,6 @@
     
     html {
         scroll-behavior: smooth;
-        background-color: #333;
     }
     
     /*-------------Layout-------------*/
@@ -27,29 +34,31 @@
         line-height: 1.5em;
         padding: 0;
         margin: 0;
-        background-color: #333;
     }
     
     section {
         height: 100vh;
     }
     
-    #rock {
-        background-color: #444;
+    #page1 {
+        background-color: var(--pagebackground-color);
     }
     
-    #rap {
-        background-color: #444;
+    #page2 {
+        background-color: var(--pagebackground-color);
     }
     
-    #dubstep {
-        background-color: #444;
+    #page3 {
+        background-color: var(--pagebackground-color);
     }
     
-    #dnb {
-        background-color: #444;
+    #page4 {
+        background-color: var(--pagebackground-color);;
     }
     
+    #page5 {
+        background-color: var(--pagebackground-color);;
+    }
     /*-------------Helpers-------------*/
     .skew {
         transform: skew(-20deg);
@@ -202,7 +211,7 @@
         }
     
         a:hover.nav-link:not(.active) {
-        color: #444;
+        color: var(--pagebackground-color);;
         background: rgb(116, 116, 116);
         background: linear-gradient(45deg, #fff, #ddd);
         }
@@ -225,10 +234,10 @@
     }
     .pagebackground {
         width: 70.8%;
-        background-color: rgb(97, 97, 97);
         margin: auto;
         top: 15%;
         height: 100%;
+        opacity: 100%;
     }
     .pagecontent{
         width: 90%;
@@ -237,7 +246,7 @@
     }
     .pageheaderout{
         margin: auto;
-        width: 97.5%;
+        width: 93.6%;
         height: 67px;
         transform: skew(-20deg);
         background-color: #333;
@@ -264,42 +273,40 @@
         color:rgb(100, 200, 0);
         transform: skew(20deg);
     }
-    td.border_bottom  {
-        border-bottom: 1px solid black;
-    }
-    table.table{
-        background-color: rgb(100, 200, 0);
-    }
-    .table, td {
+    .innercontent {
+        font-size: 35px;
         margin: auto;
-        border: 1px solid black;
+        background-color: #888;
+        width: 90.7%;
+        height: 100em;
+    }
+    .maincontent{
+        margin: auto;
+        width: 97%;
+    }
+    .bgimg{
+        position: absolute;;
+        opacity: 30%;
+        width: 100%;
+        height: 60.55em;
+    }
+    #image1{
+        margin: auto;
+        margin-left: 3%;
+        width: 40%;
+        height: 110%;
+    }
+    .pagetext{
+        margin-top: -36%;
+    }
+    .pagetextR{
+        font-size: 25px;
+        width: 50%;
+        margin-left: 45%;
+    }
+    .pagetextM{
+        font-size: 25px;
         width: 93%;
-        margin-top: 1%;
-        background-color: #444;
-        color: #fff;
-        font-size: 18px;
-    }
-    .table, th {
-        border: 1px solid black;
-        background-color: #444;
-        text-align: center;
-    }
-    .trackid{
-        width: 7%;
-    }
-    .song{
-        width: 38%;
-    }
-    .artist{
-        width: 30%;
-    }
-    .yt{
-        width: 5%;
-    }
-    .sp{
-        width: 5%;
-    }
-    .playlist{
-        width: max-content;
+        margin: auto ;
     }
 }
